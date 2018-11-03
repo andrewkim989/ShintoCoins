@@ -1,0 +1,45 @@
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+  integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+  crossorigin="anonymous">
+  <style>
+    #wrapper {
+      background-color: lightgrey;
+      padding-bottom: 50px;
+    }
+    #top {
+      text-align: center;
+      font-size: 28px;
+      vertical-align: top;
+      display: inline-block;
+      margin-left: 100px;
+      margin-top: 70px;
+    }
+    a {
+      display: inline-block;
+    }
+    a.active {
+      color: rgb(155, 155, 52);
+    }
+    img {
+      width: 200px;
+      vertical-align: top;
+      display: inline-block;
+      margin-left: 60px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div id = "wrapper">
+    <img src = "https://www.japan-guide.com/g3/3915_05.jpg">
+    <div id = "top">
+      <a routerLink = "/home" routerLinkActive = "active">Home</a> | 
+      <a routerLink = "/mine" routerLinkActive = "active">Mine Coins</a> | 
+      <a routerLink = "/buy" routerLinkActive = "active">Buy Coins</a> | 
+      <a routerLink = "/sell" routerLinkActive = "active">Sell Coins</a> | 
+      <a routerLink = "/ledger" routerLinkActive = "active">Browse Ledger</a>
+    </div>
+    <router-outlet></router-outlet>
+  </div>
+</body>
